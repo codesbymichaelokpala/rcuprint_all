@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teamdatas",
+  "info": {
+    "singularName": "teamdata",
+    "pluralName": "teamdatas",
+    "displayName": "teamdata"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "teamimg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "office": {
+      "type": "string"
+    },
+    "writeup": {
+      "type": "text"
+    },
+    "link1": {
+      "type": "string"
+    },
+    "link2": {
+      "type": "string"
+    },
+    "link3": {
+      "type": "string"
+    },
+    "link4": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "teamdatas"
+    }
+  }
+}

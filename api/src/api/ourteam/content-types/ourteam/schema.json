@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ourteams",
+  "info": {
+    "singularName": "ourteam",
+    "pluralName": "ourteams",
+    "displayName": "ourteam",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firsttxt": {
+      "type": "text"
+    },
+    "goal1": {
+      "type": "string"
+    },
+    "goal1content": {
+      "type": "text"
+    },
+    "goal2": {
+      "type": "string"
+    },
+    "goal2content": {
+      "type": "text"
+    },
+    "goal3": {
+      "type": "string"
+    },
+    "goal3content": {
+      "type": "text"
+    },
+    "goal4": {
+      "type": "string"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "ourteams"
+    }
+  }
+}

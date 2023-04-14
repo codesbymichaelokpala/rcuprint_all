@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "singularName": "category",
+    "pluralName": "categories",
+    "displayName": "category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "selectedimg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "mappedBy": "categories"
+    },
+    "ourteams": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::ourteam.ourteam",
+      "mappedBy": "categories"
+    },
+    "sliders": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::slider.slider",
+      "mappedBy": "categories"
+    },
+    "sub_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::sub-category.sub-category",
+      "mappedBy": "categories"
+    },
+    "teamdatas": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::teamdata.teamdata",
+      "mappedBy": "categories"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aboutscreens",
+  "info": {
+    "singularName": "aboutscreen",
+    "pluralName": "aboutscreens",
+    "displayName": "aboutscreen",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    },
+    "bossimage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "bg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "paragraph2": {
+      "type": "text"
+    },
+    "position": {
+      "type": "string"
+    },
+    "from_year": {
+      "type": "string"
+    },
+    "slogan": {
+      "type": "string"
+    }
+  }
+}
